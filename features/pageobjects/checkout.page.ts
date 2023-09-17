@@ -65,10 +65,7 @@ class CheckoutPage  {
   public get ThankyouMsg() {
     
     return $('//*[@id="maincontent"]/div[1]/h1/span');
-    // const a = await $('//*[@id="maincontent"]/div[1]/h1/span')
-    // console.log(await a.getText())
-    // console.log('00000000000000000000000000000000000000')
-    // return $("//h1")
+
   }
 
   public async enterEmail() {
@@ -131,12 +128,6 @@ class CheckoutPage  {
     await this.btnPlaceOrder.click();
   }
 
-//   public getMessage(): string {
-//     console.log('=======++++++++')
-//     console.log(this.ThankyouMsg.getText())
-//     return this.ThankyouMsg.getText();
-    
-//   }
 }
 
 export default new CheckoutPage();
